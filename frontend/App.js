@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { TouchableOpacity, StyleSheet, Text, View } from 'react-native';
 import React, { useState } from "react";
+
 import TestCounter from './TestCounter';
 
 export default function App() {
@@ -19,5 +20,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  countContainer: {
+    alignItems: 'center',
+    padding: 10,
   },
 });
