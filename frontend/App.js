@@ -1,21 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { TouchableOpacity, StyleSheet, Text, View } from 'react-native';
 import React, { useState } from "react";
-import MyButton from './components/MyButton';
+
+import TestCounter from './TestCounter';
 
 export default function App() {
 
-  const [count, setCount] = useState(0);
-  const increment = () => setCount(prevCount => prevCount + 1);
-  const reset = () => setCount(0);
-
   return (
     <View style={styles.container}>
-      <View style={styles.countContainer}>
-        <Text>Count: {count}</Text>
-      </View>
-      <MyButton type="1" label="Press here!!" onPress={increment}></MyButton>
-      <MyButton type="2" label="Set to zero" onPress={reset}></MyButton>
+      <TestCounter></TestCounter>
       <StatusBar style="auto" />
     </View>
   );
